@@ -6,40 +6,121 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
     <title>Kelly Park | Developer Portfolio</title>
 </head>
 
 <body>
     <div class="container">
         <nav id="topnav">
-            <span>kelly<span class="name">park</span></span>
+            <span class="logo">kelly<span class="name">park</span></span>
             <div class="navbar">
+                <a href="#hello" class="menus">HOME</a>
                 <a href="#skills" class="menus">SKILL</a>
                 <a href="#projects" class="menus">PROJECT</a>
                 <a href="#about" class="menus">ABOUT</a>
                 <a href="#contact" class="menus">CONTACT</a>
             </div>
         </nav>
-        <div id="hello">
-            <span>I'm <span class="name">Sehyun Kelly Park</span></span>
-            <span>Software developer and Student based in Vancouver, BC</span>
-            <img src="src/img.jpg" alt="main image" class="mainimg" />
+        <div class="main">
+            <div id="hello">
+                <span class="i-am">I'm <span class="name">Sehyun Kelly Park</span></span>
+                <span class="software">Software developer and Student<br /> based in Vancouver, BC</span>
+                <img src="src/img.jpg" alt="main image" class="mainimg" />
+            </div>
+            <div id="skills">
+                <span class="section-title">SKILLS</span>
+                <div class="skill">
+                    <span class="skill-title">Programming Language</span>
+                    <div class="skillset">
+                        <div class="eachskill">
+                            <img src="src/java.png" alt="java icon" class="skill-icon" />
+                            <span>Java</span>
+                        </div>
+                        <div class="eachskill">
+                            <img src="src/js.png" alt="js icon" class="skill-icon" />
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <span class="skill-title">Web Development</span>
+                    <div class="skillset">
+                        <div class="eachskill">
+                            <img src="src/HTML5.png" alt="HTML icon" class="skill-icon" />
+                            <span>HTML 5</span>
+                        </div>
+                        <div class="eachskill">
+                            <img src="src/CSS3.png" alt="css icon" class="skill-icon" />
+                            <span>CSS 3</span>
+                        </div>
+                        <div class="eachskill">
+                            <img src="src/bootstrap.png" alt="bootstrap icon" class="skill-icon" />
+                            <span>Bootstrap</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span class="skill-title">Database</span>
+                    <div class="skillset">
+                        <div class="eachskill">
+                            <img src="src/firebase.png" alt="Firebase icon" class="skill-icon" />
+                            <span>Firebase</span>
+                        </div>
+                        <div class="eachskill">
+                            <img src="src/sql.png" alt="SQL icon" class="skill-icon" />
+                            <span>SQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="projects">
+                <span class="section-title">PROJECTS</span>
+                <div class="project adoptoy">
+                    <a href="https://github.com/hurshik7/hackathon_Dec_2021" target="_blank" class="project-github">
+                        <img src="src/adoptoy.png" alt="adoptoy" class="projectimg" />
+                    </a>
+                    <span class="project-title">adoptoy</span>
+                    <div class="project-tech">
+                        <span class="tech-group">Group Project</span>
+                        <span class="tech-group">Mobile Only</span>
+                        <span class="tech-group tech-language">JavaScript</span>
+                        <span class="tech-group tech-language">Firebase</span>
+                    </div>
+                    <p class="project-desc">
+                        adoptoy is a platform to give out or exchange used toys for kids. As kids grow, they always need
+                        new toys or books based on their age or development status. Those unwanted toys usually sit in
+                        the back of the closet with dust, so we thought a lot of kids could take advantage of our app if
+                        we make a platform like a marketplace to give out or exchange those toys.
+                    </p>
+                </div>
+                <div class="project healthguard">
+                    <a href="https://github.com/KYang72Bcit/1800_BBY25" target="_blank" class="project-github">
+                        <img src="" alt="healthguard" class="projectimg" />
+                    </a>
+                    <span class="project-title">HealthGuard</span>
+                    <div class="project-tech">
+                        <span class="tech-group">Group Project</span>
+                        <span class="tech-group tech-language">JavaScript</span>
+                        <span class="tech-group tech-language">Firebase</span>
+                        <span class="tech-group tech-language">Bootstrap</span>
+                    </div>
+                    <p class="project-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+                        reiciendis odio quod eum officiis nemo fugiat re</p>
+                </div>
+            </div>
+            <div id="about">
+                <span class="section-title">ABOUT ME</span>
+            </div>
+            <footer id="contact">Contact info</footer>
         </div>
-        <div id="skills">
-            <span>Skills</span>
-            <div class="skill">language</div>
-            <div class="skill">web</div>
-            <div class="skill">db</div>
-        </div>
-        <div id="projects">
-            <span>Projects</span>
-            <div class="project">adoptoy</div>
-            <div class="project">healthguard</div>
-        </div>
-        <div id="about">
-            <span>About Me</span>
-        </div>
-        <footer id="contact">Contact info</footer>
     </div>
 </body>
 

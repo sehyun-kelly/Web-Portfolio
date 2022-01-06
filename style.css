@@ -2,24 +2,206 @@
 
 * {
     font-family: 'Rubik', sans-serif;
+    color: #212121;
 }
 
 body {
     width: 100vw;
-    height: 250vh;
+    height: 280vh;
 }
 
 .container {
     width: 100%;
     height: 100%;
-    display: grid;
-    grid-template-rows: 5% 20% 20% 35% 15% 5%;
 }
 
-#topnav, #hello, #skills, #projects, #about {
+#topnav, #hello {
     width: 100%;
+    height: 100%;
 }
+
+#topnav {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 60% 40%;
+    position: fixed;
+    top: 0;
+    height: 50px;
+    background-color: white;
+}
+
+.navbar {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    justify-items: center;
+}
+
+.logo {
+    margin-left: 5px;
+    font-size: 20px;
+}
+
+.name {
+    font-weight: 700;
+}
+
+.menus {
+    text-decoration: none;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    margin-top: 50px;
+    display: grid;
+    grid-template-rows: 15% 15% 50% 15% 5%;
+}
+
+.section-title {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+#hello {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+}
+
+.i-am {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    align-self: end;
+    justify-self: end;
+    padding-right: 20px;
+    font-size: 32px;
+}
+
+.software {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+    align-self: start;
+    justify-self: end;
+    text-align: end;
+    padding-right: 20px;
+    font-size: 24px;
+}
+
 .mainimg {
-    width: 56%;
+    width: 80%;
     height: auto;
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 2;
+    align-self: center;
+    justify-self: center;
+}
+
+#skills{
+    width: 90%;
+    height: 90%;
+    justify-self: center;
+    display: grid;
+    grid-template-rows: 13% 29% 29% 29%;
+}
+
+.skill{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 15% 85%;
+    align-items: center;
+}
+
+.skillset{
+    display: grid;
+    width: 50%;
+    grid-template-columns: 33% 34% 33%;
+    align-items: center;
+}
+
+.eachskill{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    align-items: center;
+}
+
+.skill-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.eachskill {
+    font-size: 14px;
+}
+
+.eachskill > span {
+    font-size: 12px;
+}
+
+#projects {
+    width: 90%;
+    height: 90%;
+    justify-self: center;
+    display: grid;
+    grid-template-rows: 5% 95%;
+    grid-template-columns: 50% 50%;
+}
+
+.project{
+    width: 100%;
+    display: grid;
+    grid-template-rows: 70% 5% 5% 20%;
+    justify-items: center;
+}
+
+.adoptoy {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1 ;
+}
+
+.project-github{
+    display: grid;
+    justify-items: center;
+}
+.projectimg{
+    width: 80%;
+    border-radius: 10px;
+}
+
+.project-title{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.project-tech {
+    width: 80%;
+    font-size: 12px;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    justify-items: center;
+}
+
+.tech-group {
+    background-color: #212121;
+    color: #f8f8f8;
+    text-align: center;
+    line-height: 25px;
+    width: 85px;
+    height: 25px;
+    border-radius: 10px;
+}
+
+.tech-language {
+    background-color: #696969;
+}
+
+.project-desc {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.healthguard {
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1 ;
 }
