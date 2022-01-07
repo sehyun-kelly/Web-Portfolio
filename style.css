@@ -7,7 +7,7 @@
 
 body {
     width: 100vw;
-    height: 260vh;
+    height: 1700px;
 }
 
 .container {
@@ -151,8 +151,8 @@ body {
 .project{
     width: 90%;
     display: grid;
-    grid-template-rows: 75% 5% 5% 15%;
-    justify-items: center;
+    grid-template-rows: 70% 5% 5% 20%;
+    justify-self: center;
 }
 
 .adoptoy {
@@ -163,23 +163,27 @@ body {
 .project-github{
     display: grid;
     justify-items: center;
+    align-items: center;
 }
+
 .projectimg{
-    width: 450px;
+    width: 320px;
     border-radius: 10px;
 }
 
 .project-title{
     font-weight: 600;
     font-size: 20px;
+    justify-self: center;
 }
 
 .project-tech {
-    width: 80%;
+    width: 85%;
     font-size: 12px;
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     justify-items: center;
+    justify-self: center;
 }
 
 .tech-group {
@@ -271,7 +275,7 @@ body {
     height: 30px;
 }
 
-@media screen and (max-width: 1130px) {
+/* @media screen and (max-width: 1130px) {
     #skills, #projects, #about, #contact {
         width: 90%;
     }
@@ -285,11 +289,12 @@ body {
     #skills, #projects, #about, #contact {
         width: 98%;
     }
-}
+} */
 
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 1130px) {
     body {
-        height: 400vh;
+        width: 95vw;
+        height: 2600px;
     }
 
     #skills, #projects, #about, #contact {
@@ -302,7 +307,7 @@ body {
     }
 
     .main {
-        grid-template-rows: 17% 13% 60% 6% 4%;
+        grid-template-rows: 19% 15% 52% 8% 6%;
     }
 
     #hello {
@@ -321,6 +326,7 @@ body {
         grid-row: 2 / span 1;
         justify-self: center;
         align-self: end;
+        padding: 0;
     }
 
     .software{
@@ -330,6 +336,7 @@ body {
         align-self: start;
         text-align: center;
         line-height: 36px;
+        padding: 0;
     }
 
     .skill{
@@ -383,5 +390,79 @@ body {
 
     .aboutme{
         line-height: 20px;
+    }
+
+
+}
+
+@media screen and (max-width: 730px) {
+
+    body {
+        width: 95vw;
+        height: 2600px;
+    }
+
+    #skills, #projects, #about, #contact {
+        width: 95%;
+        justify-items: center;
+    }
+
+    .skillset{
+        width: 65%;
+    }
+
+    .main {
+        grid-template-rows: 17% 13% 53% 13% 4%;
+    }
+
+    #about {
+        grid-template-rows: 20% 80%;
+    }
+
+    .profile {
+        grid-template-columns: none;
+        grid-template-rows: 50% 50%;
+    }
+
+    #contact{
+        grid-template-columns: none;
+        grid-template-rows: 40% 60%;
+    }
+
+    .contact-icons {
+        align-self: start;
+    }
+    
+}
+
+@media screen and (max-width: 550px) {
+
+    body {
+        width: 95vw;
+        height: 2700px;
+    }
+
+    .main {
+        grid-template-rows: 17% 13% 51% 15% 4%;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .skillset{
+        width: 80%;
+    }
+
+    .project-tech{
+        width: 100%;
+    }
+
+    #about {
+        grid-template-rows: 10% 90%;
+    }
+
+    .contact-icons{
+        width: 80%;
     }
 }
