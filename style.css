@@ -443,7 +443,7 @@ body {
     }
 
     .main {
-        grid-template-rows: 17% 13% 51% 15% 4%;
+        grid-template-rows: 17% 13% 49% 17% 4%;
     }
 
     .navbar {
