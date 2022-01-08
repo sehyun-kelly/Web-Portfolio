@@ -203,6 +203,7 @@ body {
 .project-desc {
     font-size: 14px;
     line-height: 22px;
+    text-align: justify;
 }
 
 .healthguard {
@@ -275,21 +276,6 @@ body {
     height: 30px;
 }
 
-/* @media screen and (max-width: 1130px) {
-    #skills, #projects, #about, #contact {
-        width: 90%;
-    }
-
-    #topnav {
-        grid-template-columns: 50% 50%;
-    }
-}
-
-@media screen and (max-width: 1010px) {
-    #skills, #projects, #about, #contact {
-        width: 98%;
-    }
-} */
 
 @media screen and (max-width: 1130px) {
     body {
