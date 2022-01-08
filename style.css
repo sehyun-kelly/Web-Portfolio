@@ -443,7 +443,7 @@ body {
     }
 
     .main {
-        grid-template-rows: 17% 13% 49% 17% 4%;
+        grid-template-rows: 17% 13% 52% 14% 4%;
     }
 
     .navbar {
@@ -465,4 +465,9 @@ body {
     .contact-icons{
         width: 80%;
     }
+
+    .project{
+        grid-template-rows: 63% 5% 5% 27%;
+    }
+
 }
