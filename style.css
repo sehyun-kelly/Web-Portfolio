@@ -389,7 +389,7 @@ body {
 
     body {
         width: 95vw;
-        height: 3000px;
+        height: 2800px;
     }
 
     #skills, #projects, #about, #contact {
@@ -482,7 +482,7 @@ body {
     }
 
     .skillset{
-        width: 80%;
+        width: 60%;
     }
 
     .web-skillset{
